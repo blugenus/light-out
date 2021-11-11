@@ -20,7 +20,7 @@ Installation
 
 4. Open the Backend `appsettings.json` and set the Data.ConnectionStrings.DefaultConnection with the MySQL server's IP, Port, Username, password and database name (example `server=127.0.0.1;port=3306;user=root;password=;database=lightout`)
 
-5. Access the Package Manager Console and Run `update-database`. This will create the required table(s) and populate the default records
+5. Access the Package Manager Console and Run `update-database`. This will create the required table(s) and populate the default records. Alternative you can restore a database dump availabile in the repo named `lightout.sql`
 
 Running the Solution
 --------------------
@@ -30,7 +30,6 @@ Both the BankendAPI and FrontEnd projects should be run simultaneously by using 
 The BankendAPI project should open a web browser pointing to your http://localhost:xxxxx/swagger/index.html
 
 The FrontEnd project will load a Form. Make sure the contents of the TextBox labeled Server IP:Port match the domain and port in your browser; if not update them. Click connect. The game should start afterwads. Should you wish to stop the game and start a new one; simply click on the `New Game` button or click on the Disconnect and then Connect button.
-
 
 Running Tests
 -------------
